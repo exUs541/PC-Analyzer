@@ -1,0 +1,51 @@
+name: Bug report
+description: Something does not work as described
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. **Do not attach `files.json`, `snapshot.json` or screenshots with personal data** — they contain file names, your computer name and serial number. Describe what you see instead, or use the demo data (see the README).
+        Security problems: please use *Security → Report a vulnerability* instead of a public issue.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Click …
+        3. See …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Shown on the page "Einstellungen" (for example 3.0.26).
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows
+      options: [Windows 11, Windows 10, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: admin
+    attributes:
+      label: Started as administrator?
+      options: ["No", "Yes"]
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log excerpt (optional)
+      description: Relevant lines of `%LOCALAPPDATA%\LaptopCheckData\data\app-errors.log`, with personal names removed.
+      render: text
