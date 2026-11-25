@@ -23,7 +23,7 @@
     <Content Include="@(WebFiles)" Link="web\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4258.31" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4370.26" />
     <PackageReference Include="Velopack" Version="1.2.161" />
   </ItemGroup>
 </Project>
