@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <!-- 10.0.19041 (Windows 10 2004): needed to read Store apps through the Windows runtime; also the oldest Windows we support -->
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Version>3.0.0-dev</Version>
+    <Product>LaptopCheck</Product>
+    <Company>LaptopCheck</Company>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,13 @@
+{
+  "name": "pc-analyzer",
+  "private": true,
+  "description": "Developer scripts for the dashboard logic tests and the demo data of PC-Analyzer (LaptopCheck). The app itself is built with dotnet.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/exUs541/PC-Analyzer.git" },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "fixtures": "node tests/make-fixtures.js",
+    "test": "node tests/make-fixtures.js && node --test tests/",
+    "demo-data": "node tests/make-fixtures.js && node tools/make-demo-data.js demo-data"
+  }
+}

@@ -1,0 +1,33 @@
+# --- your own data stays on your machine -----------------------------------
+data/
+demo-data/
+*.local.json
+
+# --- build output -----------------------------------------------------------
+bin/
+obj/
+app/artifacts/
+TestResults/
+*.nupkg
+*.zip
+
+# --- generated test data ----------------------------------------------------
+tests/fixtures/
+
+# --- node -------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+
+# --- IDEs and tools ---------------------------------------------------------
+.vs/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.user
+*.suo
+*.swp
+
+# --- OS ---------------------------------------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store

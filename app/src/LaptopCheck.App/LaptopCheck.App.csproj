@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>LaptopCheck</AssemblyName>
+    <RootNamespace>LaptopCheck.App</RootNamespace>
+    <!-- the WebView2 package also references its WPF assembly, which clashes with WindowsBase; WinForms does not use it -->
+    <NoWarn>$(NoWarn);MSB3277</NoWarn>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LaptopCheck.Server\LaptopCheck.Server.csproj" />
+    <ProjectReference Include="..\LaptopCheck.Scan\LaptopCheck.Scan.csproj" />
+    <ProjectReference Include="..\LaptopCheck.GitHub\LaptopCheck.GitHub.csproj" />
+    <ProjectReference Include="..\LaptopCheck.Cleanup\LaptopCheck.Cleanup.csproj" />
+    <ProjectReference Include="..\LaptopCheck.Update\LaptopCheck.Update.csproj" />
+  </ItemGroup>
+
+  <!-- the dashboard (web/ at the repository root) travels with the app -->
+  <ItemGroup>
+    <WebFiles Include="$(MSBuildThisFileDirectory)..\..\..\web\**\*" />
+    <Content Include="@(WebFiles)" Link="web\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4258.31" />
+    <PackageReference Include="Velopack" Version="1.2.161" />
+  </ItemGroup>
+</Project>

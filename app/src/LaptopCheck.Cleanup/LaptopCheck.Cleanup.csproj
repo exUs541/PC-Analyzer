@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\LaptopCheck.Core\LaptopCheck.Core.csproj" />
+    <ProjectReference Include="..\LaptopCheck.Scan\LaptopCheck.Scan.csproj" />
+    <InternalsVisibleTo Include="LaptopCheck.Tests" />
+  </ItemGroup>
+</Project>

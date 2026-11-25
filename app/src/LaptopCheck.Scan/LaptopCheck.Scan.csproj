@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\LaptopCheck.Core\LaptopCheck.Core.csproj" />
+    <InternalsVisibleTo Include="LaptopCheck.Tests" />
+    <InternalsVisibleTo Include="LaptopCheck.Cleanup" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="10.0.13" />
+  </ItemGroup>
+</Project>

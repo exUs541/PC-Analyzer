@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LaptopCheck.App/LaptopCheck.App.csproj" />
+    <Project Path="src/LaptopCheck.Cleanup/LaptopCheck.Cleanup.csproj" />
+    <Project Path="src/LaptopCheck.Core/LaptopCheck.Core.csproj" />
+    <Project Path="src/LaptopCheck.GitHub/LaptopCheck.GitHub.csproj" />
+    <Project Path="src/LaptopCheck.Scan/LaptopCheck.Scan.csproj" />
+    <Project Path="src/LaptopCheck.Server/LaptopCheck.Server.csproj" />
+    <Project Path="src/LaptopCheck.Update/LaptopCheck.Update.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/LaptopCheck.Tests/LaptopCheck.Tests.csproj" />
+  </Folder>
+</Solution>
